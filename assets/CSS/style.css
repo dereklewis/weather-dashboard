@@ -1,0 +1,50 @@
+h1 {
+  color: darkcyan;
+}
+nav {
+  text-align: center;
+  background-color: lightblue;
+}
+
+ul {
+  font-size: larger;
+}
+
+li {
+  list-style-type: none;
+}
+
+.city-info {
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  max-width: 900px;
+  margin: auto;
+}
+
+.large-block,
+aside {
+  flex: 0 100%;
+  height: 500px;
+}
+
+aside {
+  background-color: gold;
+}
+
+.large-block {
+  background-color: lightcoral;
+}
+
+@media (min-width: 600px) {
+  .large-block {
+    flex: 1 0 0px;
+  }
+
+  aside {
+    flex: 0 0 200px;
+  }
+}

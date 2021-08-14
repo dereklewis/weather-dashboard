@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Weather Dashboard</h1>
+      </nav>
+    </header>
+    <div class="container">
+      <section class="large-block">
+        <div class="city-info"></div>
+        <div class="current-date"></div>
+
+        <div id="divOne">
+          <ul>
+            Currrent Temperature (Fahrenheit)
+            <li id="current-temp"></li>
+          </ul>
+          <ul>
+            Humidity
+            <li id="humidity"></li>
+          </ul>
+          <ul>
+            Wind Speed
+            <li id="wind-speed"></li>
+          </ul>
+        </div>
+      </section>
+      <aside>
+        <p>
+          <label for="city-name">Choose a City</label>
+          <input type="text" id="city-name" />
+          <input type="submit" value="Submit" id="submit-button" />
+        </p>
+        <div id="landing-spot">saved info here</div>
+      </aside>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./assets/JS/script.js"></script>
+  </body>
+</html>
